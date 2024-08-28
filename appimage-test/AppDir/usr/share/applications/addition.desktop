@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Addition
+Comment=A simple addition application
+Exec=addition
+Icon=addition
+Terminal=false
+Type=Application
+Categories=Utility;

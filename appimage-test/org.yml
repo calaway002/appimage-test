@@ -1,0 +1,32 @@
+version: 1
+script:
+  # Commands to install your application and prepare the AppDir
+  - apt-get update
+  - apt-get install -y your-app-package-name
+
+AppDir:
+  # The root of the AppDir that contains your application and dependencies
+  path: ./AppDir
+
+  # Information about your application
+  app_info:
+    id: org.example.myapp
+    name: MyApp
+    icon: your-app-icon.png
+    version: "1.0"
+    exec: usr/bin/your-app-executable
+
+  # Install runtime dependencies using apt package manager
+  apt:
+    arch: amd64
+    sources:
+      - sourceline: "deb [arch=amd64] http://archive.ubuntu.com/ubuntu/ focal main universe"
+    include:
+      - your-app-package-name
+      - dependency1
+      - dependency2
+
+AppImage:
+  arch: x86_64
+  comp: "xz"  # Specify the compression type (gzip, xz, or zstd)
+  file_name: MyApp-1.0-x86_64.AppImage

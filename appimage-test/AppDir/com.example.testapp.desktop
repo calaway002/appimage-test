@@ -1,0 +1,11 @@
+[Desktop Entry]
+X-AppImage-Arch=<MISSING>
+X-AppImage-Version=1.0.0
+X-AppImage-Name=TestApp
+Name=TestApp
+Exec=addition
+Icon=application-vnd.appimage
+Type=Application
+Terminal=false
+Categories=Utility;
+Comment=
