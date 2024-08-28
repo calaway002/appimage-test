@@ -1,0 +1,2 @@
+# appimage-test
+appimage test
